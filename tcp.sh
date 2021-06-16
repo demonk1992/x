@@ -32,7 +32,7 @@ sed -i '$ i\net.ipv4.tcp_sack = 1' /etc/sysctl.conf
 sed -i '$ i\net.ipv4.tcp_syn_retries = 2' /etc/sysctl.conf
 sed -i '$ i\net.ipv4.tcp_synack_retries = 2' /etc/sysctl.conf
 sed -i '$ i\net.ipv4.tcp_syncookies = 1' /etc/sysctl.conf
-sed -i '$ i\net.ipv4.tcp_low_latency = 1' /etc/sysctl.conf
+
 sed -i '$ i\net.ipv4.tcp_timestamps = 1' /etc/sysctl.conf
 sed -i '$ i\net.ipv4.tcp_tw_reuse = 1' /etc/sysctl.conf
 sed -i '$ i\net.ipv4.tcp_window_scaling = 1' /etc/sysctl.conf
