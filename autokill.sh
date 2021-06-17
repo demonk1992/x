@@ -8,8 +8,8 @@ while :
   userlimit.sh 1
   sleep 10 
   done
-while :
-  do
-  userexpired.sh
-  sleep 36000
-  done
+#while :
+  #do
+  #userexpired.sh
+  #sleep 36000
+  #done
