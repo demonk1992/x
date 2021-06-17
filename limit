@@ -1,4 +1,4 @@
-sudo apt-get install cron -y
+
 cd /usr/bin
 wget https://raw.githubusercontent.com/demonk1992/x/main/autokill.sh && chmod +x autokill.sh
 wget https://raw.githubusercontent.com/demonk1992/x/main/userlimit.sh && chmod +x chmod +x userlimit.sh
