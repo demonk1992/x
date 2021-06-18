@@ -1,12 +1,12 @@
 while :
   do 
   userlimitssh.sh 1
-  sleep 10
+  sleep 0
   done
 while :
   do
   userlimit.sh 1
-  sleep 10 
+  sleep 0
   done
 #while :
   #do
