@@ -2,7 +2,7 @@
 apt-get install cron -y
 cd /usr/bin
 wget https://raw.githubusercontent.com/demonk1992/x/main/autokill.sh && chmod +x autokill.sh
-wget https://raw.githubusercontent.com/demonk1992/x/main/userlimit.sh && chmod +x chmod +x userlimit.sh
+wget https://raw.githubusercontent.com/demonk1992/x/main/userlimit.sh && chmod +x userlimit.sh
 wget https://raw.githubusercontent.com/demonk1992/x/main/userlimitssh.sh && chmod +x userlimitssh.sh
 wget https://raw.githubusercontent.com/demonk1992/x/main/clearcache.sh && chmod +x clearcache.sh
 cd /etc
