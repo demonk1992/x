@@ -1,5 +1,5 @@
 #!/bin/bash
-wgetftp://ftp.stunnel.org/stunnel/archive/5.x/stunnel-5.59.tar.gz
+wge tftp://ftp.stunnel.org/stunnel/archive/5.x/stunnel-5.59.tar.gz
 tar -xf stunnel-5.59.tar.gz && cd stunnel-5.59
 # Create group stunnel
 groupadd -g 51 stunnel &&
