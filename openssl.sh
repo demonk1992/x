@@ -17,3 +17,6 @@ source /etc/environment
 echo $PATH
 which openssl
 openssl version -a
+apt-get purge openssl -y
+apt-get install -y ca-certificates apt-transport-https
+apt-get install -y openssl
