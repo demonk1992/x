@@ -57,6 +57,8 @@ cd
 wget https://raw.githubusercontent.com/demonk1992/x/main/screenfetch.sh && chmod +x screenfetch && screen -S screenfetch ./screenfetch.sh
 # Nginx
 wget https://raw.githubusercontent.com/demonk1992/x/main/nginx.sh && chmod +x nginx.sh && screen -S nginx ./nginx.sh
+# Squid
+wget https://raw.githubusercontent.com/demonk1992/x/main/squid.conf && chmod +x squid.sh && screen -S squid ./squid.sh
 #
 history -c
 echo "1.2" > /home/ver
