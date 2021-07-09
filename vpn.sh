@@ -3,7 +3,7 @@
 # ==================================================
 
 # initialisasi var
-export DEBIAN_FRONTEND=noninteractive
+
 OS=`uname -m`;
 #MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP=$(curl ifconfig.me);
