@@ -36,8 +36,8 @@ echo -e "Dropbear       : 143, 109"
 echo -e "SSL/TLS        : 443, 222, 777"
 echo -e "WS-SSH         : 2082"
 echo -e "WS-OVPN        : 2086"
-echo -e "Squid          : 8080
-echo -e "Port Squid     : 3128, 8080 (limit to IP SSH)" 
+echo -e "Webmin         : 10000
+echo -e "Port Squid     : 8080 (limit to IP SSH)" 
 echo -e "OpenVPN        : TCP 1194 http://$IP:81/client-tcp-1194.ovpn"
 echo -e "OpenVPN        : UDP 2200 http://$IP:81/client-udp-2200.ovpn"
 echo -e "OpenVPN        : SSL 992 http://$IP:81/client-tcp-ssl.ovpn"
