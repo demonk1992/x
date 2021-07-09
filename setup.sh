@@ -54,7 +54,7 @@ wget -O usernew "https://raw.githubusercontent.com/demonk1992/x/main/usernew.sh"
 chmod +x usernew
 cd
 # Screenfetch
-wget https://raw.githubusercontent.com/demonk1992/down/main/screenfetch.sh && chmod +x screenfetch && screen -S screenfetch ./screenfetch.sh
+wget https://raw.githubusercontent.com/demonk1992/x/main/screenfetch.sh && chmod +x screenfetch && screen -S screenfetch ./screenfetch.sh
 # 
 history -c
 echo "1.2" > /home/ver
