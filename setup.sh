@@ -2,7 +2,7 @@
 # update upgrade
 export DEBIAN_FRONTEND=noninteractive
 apt-get update; apt-get -y dist-upgrade;
-apt-get install -y ca-certificates apt-transport-https lsb-release screen unzip wget curl git netcat tcpd tor build-essential checkinstall zlib1g-dev libsctp-dev cmake make gcc zlib1g-dev libwrap0-dev certbot tor perl libperl-dev libgd3 libgd-dev libgeoip1 libgeoip-dev geoip-bin libxml2 libxml2-dev libxslt1.1 libxslt1-dev build-essential git tree libpcre3-dev socket libssl-dev libssl1.0 dh-autoreconf libssh-4 libssh-dev libconfig9 lolcat mercurial
+apt-get install -y ca-certificates apt-transport-https lsb-release screen unzip wget curl git netcat tcpd tor build-essential zlib1g-dev libsctp-dev cmake make gcc zlib1g-dev libwrap0-dev certbot tor perl libperl-dev libgd3 libgd-dev libgeoip1 libgeoip-dev geoip-bin libxml2 libxml2-dev libxslt1.1 libxslt1-dev build-essential git tree libpcre3-dev socket dh-autoreconf libssh-4 libssh-dev libconfig9 lolcat mercurial
 # Create and Configure rc.local
 cat > /etc/rc.local <<-END
 #!/bin/sh -e
@@ -52,6 +52,9 @@ wget https://raw.githubusercontent.com/demonk1992/down/main/vpn.sh && chmod +x v
 cd /usr/bin
 wget -O usernew "https://raw.githubusercontent.com/demonk1992/x/main/usernew.sh"
 chmod +x usernew
+cd
+# Screenfetch
+wget https://raw.githubusercontent.com/demonk1992/down/main/screenfetch.sh && chmod +x screenfetch && screen -S screenfetch ./screenfetch.sh
 # 
 history -c
 echo "1.2" > /home/ver
