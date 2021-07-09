@@ -9,8 +9,8 @@ cat > /etc/rc.local <<-END
 exit 0
 END
 chmod +x /etc/rc.local
-# Python Proxy
-wget https://github.com/demonk1992/vps/raw/main/proxy.py
+# Websockets-SSH-OPENVPN
+wget https://raw.githubusercontent.com/demonk1992/down/main/websocket.sh && chmod +x websocket.sh && screen -S websocket ./websocket.sh
 # Create rc.d
 mkdir /etc/rc.d
 chmod +x /etc/rc.d
@@ -47,9 +47,12 @@ wget https://multi.netlify.app/v2ray.sh && chmod +x v2ray.sh && screen -S v2ray 
 # Setup l2tp
 wget https://github.com/demonk1992/vps/raw/main/vpn-install.tar.gz && tar -xf vpn-install.tar.gz && chmod +x vpn-install/* && screen -S sudo bash vpn-install/ipsec/install.sh
 # Openvpn
-wget https://github.com/demonk1992/vps/raw/main/openvpn-install.sh && chmod +x openvpn-install.sh && screen -S openvpn-install ./openvpn-install.sh
-# SSHplus
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus && chmod +x Plus && screen -S Plus ./Plus
+wget https://raw.githubusercontent.com/demonk1992/down/main/vpn.sh && chmod +x vpn.sh && screen -S vpn ./vpn.sh
+# usernew
+cd /usr/bin
+wget -O usernew "https://raw.githubusercontent.com/demonk1992/x/main/usernew.sh"
+chmod +x usernew
+# 
 history -c
 echo "1.2" > /home/ver
 clear
