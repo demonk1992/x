@@ -8,7 +8,10 @@ cat > /etc/rc.local <<-END
 #!/bin/sh -e
 exit 0
 END
-
+# Banner
+cat > /etc/idssh.net <<-END
+<h6><font color='blue'>IDSSH.XYZ</font></h6>
+END
 # Ubah ijin akses
 chmod +x /etc/rc.local
 # Create rc.d
