@@ -4,6 +4,8 @@ mkdir badvpn-build
 cd badvpn-build
 cmake ~/badvpn-1.999.130 -DBUILD_NOTHING_BY_DEFAULT=1 -DBUILD_UDPGW=1
 make install
+
+# Permission
 chmod +x /usr/local/bin/badvpn-udpgw
 wget -O /etc/systemd/system/udpgw.service "https://raw.githubusercontent.com/demonk1992/x/main/udpgw.service"
 chmod +x /etc/systemd/system/udpgw.service
