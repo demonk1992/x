@@ -30,7 +30,7 @@ cert   = /etc/stunnel/stunnel.pem
 ;output = stunnel.log
 
 [https]
-accept  = 3128
+accept  = 3127
 connect = 443
 ;; "TIMEOUTclose = 0" is a workaround for a design flaw in Microsoft SSL
 ;; Microsoft implementations do not use SSL close-notify alert and thus
