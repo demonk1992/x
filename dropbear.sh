@@ -16,4 +16,7 @@ make && make install
 mv /usr/sbin/dropbear /usr/sbin/dropbear.old
 ln /usr/local/sbin/dropbear /usr/sbin/dropbear
 cd && rm -rf dropbear-2016.74 && rm -rf dropbear-2016.74.tar.bz2
+DROPBEAR=/etc/defaualt/dropbear
+sed -i "s/DROPBEAR_EXTRA_ARGS=""/DROPBEAR_EXTRA_ARGS=""/g" "$DROPBEAR"
+sed -i "s/DROPBEAR_EXTRA_ARGS=""/DROPBEAR_EXTRA_ARGS="/etc/idssh.net"/g"
 service dropbear restart
