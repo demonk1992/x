@@ -1,0 +1,12 @@
+proxies:
+  - name: SSR
+    type: trojan
+    server: xray.idssh.xyz
+    port: 443
+    password: 935f8b14-d6d1-4b4a-8d0e-cdbd7552de11
+    network: grpc
+    sni: maps.google.com
+    skip-cert-verify: true
+    udp: true
+    grpc-opts:
+        grpc-service-name: djxjtrojangrpc
